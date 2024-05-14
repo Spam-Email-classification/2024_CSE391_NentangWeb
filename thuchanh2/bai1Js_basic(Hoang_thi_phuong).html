@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function printNumber(){
+            let x = document.getElementById("number").value;
+            number = +x;
+            let html = '';
+            for(let i =1; i<number; i++){
+                html += i + '<br>';
+            }
+            document.getElementById('result').innerHTML = html;
+        }
+
+    </script>
+</head>
+<body>
+    <form action="" method="get">
+
+        Nhập số: <input type="text" name="" id="number" value = "0">
+        <input type="button" value="In ket qua" onclick="printNumber()">
+
+    </form>
+    <div id="result"></div>
+</body>
+</html>
